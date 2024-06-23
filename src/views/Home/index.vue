@@ -3,4 +3,8 @@
   <div>home页面</div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+div {
+  height: 3000px;
+}
+</style>
