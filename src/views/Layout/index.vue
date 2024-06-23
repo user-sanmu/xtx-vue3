@@ -1,12 +1,14 @@
 <script setup>
-defineOptions({
-  name: 'layout-page'
-})
+import LayoutFooter from './components/LayoutFooter.vue'
+import LayoutHeader from './components/LayoutHeader.vue'
+import LayoutNav from './components/LayoutNav.vue'
 </script>
 <template>
   <div>
-    首页
+    <LayoutNav />
+    <LayoutHeader />
     <RouterView />
+    <LayoutFooter />
   </div>
 </template>
 
