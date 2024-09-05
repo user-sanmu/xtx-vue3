@@ -1,7 +1,6 @@
 <script setup>
 import { useCartStore } from '@/stores/cart'
 const cartstore = useCartStore()
-// const cartList = []
 
 // 单选回调
 const singleCheck = (i, select) => cartstore.singleCheck(i.skuId, select)
@@ -88,7 +87,9 @@ const allCheck = select => cartstore.allCheck(select)
           <span class="red">¥ {{ cartstore.selectedPrice.toFixed(2) }} </span>
         </div>
         <div class="total">
-          <el-button size="large" type="primary">下单结算</el-button>
+          <el-button size="large" type="primary" @click="$router.push('/checkout')"
+            >下单结算</el-button
+          >
         </div>
       </div>
     </div>
